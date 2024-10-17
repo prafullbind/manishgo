@@ -8,6 +8,7 @@ import ScrollMenu from './components/scrollmenu/ScrollMenu'
 import CarServices from './components/carservices/CarServices'
 import CuratedServices from './components/curatedServices/CuratedServices'
 import Card from './components/curatedServices/Card'
+import Footer from './components/footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
       <CarServices />
       <Card />
       <CuratedServices />
+      <Footer/>
     </div>
   )
 }
