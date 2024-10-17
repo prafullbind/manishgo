@@ -1,0 +1,26 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-container {
+  background-image: url('/gomechanic-india.jpg');
+  /* Add your car image path here */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* This makes the background image fixed */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}

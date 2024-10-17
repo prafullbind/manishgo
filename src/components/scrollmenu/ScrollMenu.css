@@ -1,0 +1,55 @@
+.scroll-menu-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(217, 211, 211, 0.1); /* Shadow below the menu */
+    border-radius: 5px; /* Optional: Rounding the corners for a smoother look */
+    width: 70vw;
+  }
+  
+  .arrow-btn {
+    background-color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow for the arrow button */
+    padding: 10px;
+  }
+  
+  .arrow-btn.left {
+    position: absolute;
+    left: 0;
+  }
+  
+  .arrow-btn.right {
+    position: absolute;
+    right: 0;
+  }
+  
+  .scroll-menu {
+    display: flex;
+    overflow-x: hidden; /* Hide the default scrollbar */
+    scroll-behavior: smooth;
+    flex-grow: 1;
+  }
+  
+  .menu-list {
+    display: flex;
+    gap: 20px; /* Space between menu items */
+  }
+  
+  .menu-item {
+    padding: 10px 20px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .menu-item:hover {
+    border-bottom: 2px solid black; /* Optional: Adds underline effect on hover */
+  }
+  

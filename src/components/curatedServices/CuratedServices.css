@@ -1,0 +1,88 @@
+/* CuratedServices.css */
+.curated-services {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 70vw;
+  box-sizing: border-box;
+  /* Ensure width includes padding */
+}
+
+.banner img {
+  width: 150px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services-section {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.services-section h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  border-bottom: 2px solid red;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.scroll-controls {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* Ensure it takes full width */
+}
+
+.services-icons {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.service {
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.scroll-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.scroll-button.left {
+  margin-right: 10px;
+}
+
+.scroll-button.right {
+  margin-left: 10px;
+}
+
+.service.new::after {
+  content: 'NEW';
+  color: green;
+  font-size: 12px;
+  margin-left: 5px;
+}

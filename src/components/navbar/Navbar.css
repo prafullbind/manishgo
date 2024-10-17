@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: transparent; /* Transparent background to allow fixed image to show through */
+    box-shadow: none; /* Remove shadow for clean look */
+    z-index: 10; /* Ensure navbar stays above other elements */
+    /* position: sticky;  */
+    /* Keep navbar at the top when scrolling */
+    top: 0;
+    color: white;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 40px;
+    margin-right: 10px;
+    color: white; /* White logo */
+}
+
+.nav-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white; /* White text for the links */
+}
+
+.login-btn {
+    background-color: red; /* Red background to match the button in the image */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.location select {
+    background-color: #CCCCCC; /* Light gray background for the dropdown */
+    color: white; /* White text for the dropdown */
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
